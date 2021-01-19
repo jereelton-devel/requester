@@ -1,0 +1,354 @@
+
+* {
+    font-family: "Myriad Pro", sans-serif;
+}
+
+body {
+    background: rgb(181,181,181);
+    background: linear-gradient(305deg, rgba(15,15,15,0.8407563709077381) 20%, rgba(115,115,115,1) 100%);
+}
+
+#container-requester {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    position: fixed;
+    z-index: 2000;
+    display: block;
+    overflow: hidden;
+}
+
+#div-request-endpoint {
+    width: 100%;
+    height: 8%;
+    padding-left: 1%;
+    color: #2aabd2;
+    float: right;
+    text-align: right;
+    background: rgb(181,181,181);
+    background: linear-gradient(305deg, rgba(15,15,15,0.8407563709077381) 20%, rgba(115,115,115,1) 100%);
+}
+
+#div-request-endpoint .div-request-options {
+    float: left;
+    text-align: left;
+    margin-left: 5px;
+}
+
+#div-request-endpoint .div-request-options span {
+    font-size: 11px;
+}
+
+#div-request-endpoint .padding-top-1 {
+    padding-top: 1%;
+    float: right;
+}
+
+#div-request-endpoint .btn {
+    width: 80px;
+}
+
+#select-request-type,
+#select-received-type,
+#select-mode-type,
+#select-method-type {
+    width: 90px;
+    height: 27px;
+    border: none;
+    color: #FFCB6B;
+    background-color: #2a2a2a;
+    margin: 3px;
+}
+
+#endpoint {
+    width: 400px;
+    height: 27px;
+    border: none;
+    color: #FFCB6B;
+    background-color: #2a2a2a;
+    margin: 3px;
+    border: solid #FFCB6B 1px;
+}
+
+#container-requester h2 {
+    color: #FFCB6B;
+    width: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: left;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+#container-requester #div-request-params {
+    width: 35%;
+    height: 91%;
+    padding: 1%;
+    background-color: #4000A0;
+    color: #FFFFFF;
+    float: left;
+    overflow: auto;
+}
+
+#div-request-params h4 {
+    color: #FFCB6B;
+}
+
+#div-add-params input {
+    margin: 3px auto;
+    color: #565656;
+}
+
+#div-add-params button {
+    width: 15px !important;
+    height: 20px !important;
+    font-size: 10px !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+#container-requester #div-request-params #div-body-post {
+    display: none;
+}
+
+#container-requester #div-request-params #input-body-post {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    margin: 0px;
+    padding: 1%;
+    font-family: "Courier New";
+    color: #0000FF;
+    overflow: auto;
+    border: solid #484848 1px;
+    background-color: #FFFFFF;
+}
+
+#container-requester #div-requester-results {
+    width: 65%;
+    height: 91%;
+    float: right;
+    text-align: left;
+    padding: 0px;
+    color: #FFCB6B;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+#container-requester #div-requester-results input {
+    display: block;
+    margin: 5px auto;
+    color: #1C005A;
+    width: 98%;
+}
+
+#container-requester #div-requester-results #bt-exec-sql-editor {
+    width: 50% !important;
+    margin: 10px auto;
+}
+
+#container-requester #div-requester-results #bt-exec-sql-editor-test {
+    width: 50% !important;
+    margin: 10px auto;
+}
+
+#div-request-headers, #div-request-results {
+    width: 100%;
+    padding-left: 1%;
+}
+
+#div-request-headers {
+    background-color: #e6e6e6;
+    color: #2a2a2a;
+    height: 90%;
+    display: none;
+    overflow: auto;
+}
+
+#div-request-results {
+    background-color: #FFFFFF;
+    color: #0d47a1;
+    height: 100%;
+    display: block;
+    overflow: auto;
+}
+
+#div-request-results pre,
+#div-request-headers pre {
+    border: none;
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    color: #0b58a2;
+}
+
+#div-request-results pre strong {
+    font-size: 25px;
+    width: 100%;
+    padding: 1%;
+    margin: 100px auto;
+    text-align: center;
+    letter-spacing: 1px;
+    display: block;
+}
+
+#resultados {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    overflow: auto;
+    background-color: #4000A0 !important;
+    position: fixed;
+    z-index: 1000;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+.padding-footer {
+    padding: 30px;
+}
+
+#resultados table {
+    width: auto;
+    margin: 0px auto;
+}
+
+table, thead, tbody, th, tr, td {
+    border: none;
+    text-align: center;
+    background-color: #4000A0 !important;
+}
+
+td {
+    padding: 3px;
+    color: #0b58a2;
+    border-bottom: solid #ABABAB 1px !important;
+    background-color: #FFFFFF !important;
+}
+
+th {
+    padding: 10px;
+    font-size: 15px;
+    color: #FFFFFF;
+    border-bottom: solid #0d47a1 2px !important;
+    background-color: #4000A0 !important;
+}
+#select-logs {
+    width: 90%;
+}
+
+#box-conteiner-login {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    background: rgb(181,181,181);
+    background: linear-gradient(305deg, rgba(15,15,15,0.8407563709077381) 20%, rgba(115,115,115,1) 100%);
+}
+
+#login-box {
+    color: #FFCB6B;
+    text-align: left;
+    width: 26%;
+    height: 60%;
+    margin: 0px;
+    padding: 2%;
+    position: fixed;
+    z-index: 1000;
+    top: 15%;
+    left: 37%;
+    background-image: url("../img/box-login-back.png");
+    background-repeat: repeat;
+    border: solid #FFCB6B 1px;
+}
+
+#login-box input {
+    width: 98%;
+    background-color: #F1F1E3;
+    color: #151515;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 15px auto;
+}
+
+#login-box .btn {
+    display: block;
+    width: 80px;
+    margin: 30px auto;
+}
+
+#logger-view-quit {
+    text-align: center;
+    font-family: "Arial", "sans-serif";
+    width: 100%;
+    height: 20px;
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 100px auto;
+}
+
+#a-quit {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#sqleditor-quit {
+    text-align: center;
+    font-family: "Arial", "sans-serif";
+    width: 100%;
+    height: 20px;
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 20px auto;
+}
+
+#new-request {
+    width: 20px;
+    height: 80px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    background-color: #2aabd2;
+    color: #FFFFFF;
+    font-size: 15px;
+    position: fixed;
+    z-index: 3000;
+    top: 40%;
+    left: 0px;
+    display: none;
+    border-radius: 0px 8px 8px 0px;
+}
+
+#bt-new-request {
+    width: 20px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border: none;
+    background-color: #2aabd2;
+    color: #FFFFFF;
+    font-size: 15px;
+    border-radius: 0px 8px 8px 0px;
+}
