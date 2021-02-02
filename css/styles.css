@@ -46,7 +46,7 @@ body {
 }
 
 #div-request-endpoint .btn {
-    width: 80px;
+    width: 100px !important;
 }
 
 #select-request-type,
@@ -99,6 +99,7 @@ body {
 #div-add-params input {
     margin: 3px auto;
     color: #565656;
+    width: 37%;
 }
 
 #div-add-params button {

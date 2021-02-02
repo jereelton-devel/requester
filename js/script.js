@@ -1,6 +1,7 @@
 
-var domain = "DOMAIN";
-var endpointApi = "https://"+domain+"/requester/RequesterApi.php";
+var domain = "localhost";
+var proto = "http";
+var endpointApi = proto+"://"+domain+"/requester/api/RequesterApi.php";
 
 //TODO: Terminar o controle de acesso das aplicacoes
 /*Controle de acesso por aplicacao*/

@@ -13,7 +13,7 @@ if(isset($_SESSION['requesterlogin'])) {
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>REQUESTER LOGIN</title>
-    <meta name="description" content="LOGGERVIEW">
+    <meta name="description" content="REQUESTER">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />

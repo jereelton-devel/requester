@@ -13,8 +13,14 @@ class RequesterLogin
 
     public function requesterLogin()
     {
+        $fileconf = "../config.dat";
+        $linesconf = file($fileconf);
+
+        $user = explode(":", trim($linesconf[0]))[0];
+        $pass = explode(":", trim($linesconf[0]))[1];
+
         /*AMBIENTE DE DESENVOLVIMENTO: Usuario e Senha Padrão*/
-        if(base64_decode($this->name) == "devel" && md5(base64_decode($this->pass)) == "329e179205ab5e347a80c6a878bcdcb9") {
+        if(base64_decode($this->name) == $user && md5(base64_decode($this->pass)) == $pass) {
             return true;
         }
 
