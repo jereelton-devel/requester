@@ -185,7 +185,7 @@ $(document).ready(function(){
     });
 
     select_method_type.change(function(){
-        if($(this).val() == 'POST') {
+        if($(this).val() == 'POST' || $(this).val() == 'PUT') {
             $("#div-body-post").show();
         } else {
             $("#div-body-post").hide();
@@ -239,7 +239,7 @@ $(document).ready(function(){
         var endpointRequester = $("#endpoint").val();
         var dataRequester = "";
 
-        if(methodRequester == 'POST') {
+        if(methodRequester == 'POST' || methodRequester == "PUT") {
             dataRequester = $("#input-body-post").val();
         }
 

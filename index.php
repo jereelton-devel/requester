@@ -83,6 +83,8 @@ TODO:Recuperar a Header de Resposta e Status
                 <option value="">Selecione</option>
                 <option value="GET">GET</option>
                 <option value="POST">POST</option>
+                <option value="PUT">PUT</option>
+                <option value="DELETE">DELETE</option>
             </select>
         </div>
 
