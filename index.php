@@ -9,6 +9,7 @@ ini_set('display_startup_errors', TRUE);*/
 if(!isset($_SESSION['requesterlogin']) || $_SESSION['requesterlogin'] == "") {
     header("location:login.php");
 }
+
 ?>
 
 <!DOCTYPE html>
